@@ -76,3 +76,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
+SESSION_COOKIE_SECURE = True  # HTTPS को लागि
+CSRF_COOKIE_SECURE = True    # HTTPS को लागि
+CSRF_TRUSTED_ORIGINS = ['https://surdatum.onrender.com']  # Render URL थप्नुहोस्
+
+GDAL_LIBRARY_PATH = '/usr/lib/x86_64-linux-gnu/libgdal.so'
+GEOS_LIBRARY_PATH = '/usr/lib/x86_64-linux-gnu/libgeos_c.so'
